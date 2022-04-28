@@ -494,7 +494,7 @@ code {
   margin: 0px auto;
   padding: 40px 60px;
   position: relative;
-  max-width: 920px;
+  width: 100%;
 }
 
 #header {
