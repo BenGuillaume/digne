@@ -11,7 +11,7 @@
   </head>
   <body>
     <!-- <model-viewer> HTML element -->
-    <model-viewer bounds="tight" enable-pan src="faille normale Barres de Chine.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1">
+    <model-viewer bounds="tight" enable-pan src="faille_normale_Barres_Chine.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls environment-image="neutral" poster="poster.webp" shadow-intensity="1">
       <div class="progress-bar hide" slot="progress-bar">
           <div class="update-bar"></div>
       </div>
@@ -23,9 +23,9 @@
       </div>
        <div class="slider">
        <div class="slides">
-      <button class="slide selected" onclick="switchSrc(this, 'faille normale Barres de Chine')" style="background-image: url('poster.webp');">
+      <button class="slide selected" onclick="switchSrc(this, 'faille_normale_Barres_Chine')" style="background-image: url('faille_normale_Barres_Chine.png');">
       </button>
-      <button class="slide" onclick="switchSrc(this, 'Failles conjuguees dans le Bajocien Bathonien')" style="background-image: url('poster.webp');">
+      <button class="slide" onclick="switchSrc(this, 'Failles_conjuguees_Bajocien_Bathonien')" style="background-image: url('Failles_conjuguees_Bajocien_Bathonien.png');">
       </button>
          </div>
      </div>
@@ -40,7 +40,7 @@
   window.switchSrc = (element, name) => {
     const base = name;
     modelViewer.src = base + '.glb';
-    modelViewer.poster = base + '.webp';
+    modelViewer.poster = base + '.png';
     const slides = document.querySelectorAll(".slide");
     slides.forEach((element) => {element.classList.remove("selected");});
     element.classList.add("selected");
